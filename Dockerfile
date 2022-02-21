@@ -5,3 +5,4 @@ RUN /root/glinstall.sh && /root/pznginstall.sh
 VOLUME /glftpd/site /glftpd/ftp-data
 RUN apt-get clean -y && rm -rf /var/lib/apt/lists/* /var/cache/* /var/tmp/* /tmp/*
 RUN cp -arp /glftpd/ftp-data /glftpd/ftp-data-dist && rm -rf /glftpd/ftp-data/*
+EXPOSE 1337
